@@ -26,7 +26,7 @@
         <a href="#" class="logo"> <i class="fas fa-car"></i> <span class="s-one">Top</span> <span class="s-two"> cars</span></a>
         
         <nav class="navbar">
-            <a href="#home"><i class="fas fa-home"></i>home</a>
+            <a href="index.html"><i class="fas fa-home"></i>home</a>
             <a href="#vehicles">vehicles</a>
             <a href="#services">services</a>
             <a href="#featured">featured</a>
@@ -38,12 +38,14 @@
             
             <div class="log">
                 <div id="login-btn">
-                    <button class="btn">Sign in<i class="far fa-user"></i></button>
-                    <i class="far fa-user mo"></i>
+                    <a href="login.html" class="btn">Sign in<i class="far fa-user"></i></a>
+                    <a href="login.html" class="mo"><i class="far fa-user"></i></a>
+                    
                 </div>
                 <div id="register-btn">
-                    <button class="btn">Sign up<i class="fa fa-registered"></i></button>
-                    <i class="fa fa-registered mo"></i>
+                    <a href="register.html" class="btn">Sign up<i class="fa fa-registered"></i></a>
+                    <a href="register.html" class="mo" ><i class="fa fa-registered"></i></a>
+                    
                 </div>
             </div>
 
@@ -63,88 +65,13 @@
     </header>
     <!-- End Heeader -->
 
-    <!-- Start login form -->
-    <div class="login-form-container">
-        
-    <span id="close-login-form" class="fas fa-times"></span>
-        <form action="">
-            <h1>Sign in to TopCars</h1>
-            <div class="text-box">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="text-box">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" placeholder="Password">
-            </div>
-            <p>Forgot Password? <a href="#forgot">click here</a></p>
-            <input type="submit" class="btn" value="Login Now">
-            <p>or login with</p>
-            <div class="buttons">
-                <a href="#" class="btn"> <i class="fab fa-google"></i> google</a>
-                <a href="#" class="btn"> <i class="fab fa-facebook"></i> facebook</a>
-            </div>
-            <p>Don't have an account? <a href="">create one</a></p>
-        </form>
-    </div>
-    <!-- End login form -->
-
-    <!-- Start register form -->
-    <div class="register-form-container">
-        <span id="close-register-form" class="fas fa-times"></span>
-        <div class="text">
-            <ul>
-                <h2>Why create a MyTopCars account?</h2>
-                <li><img alt="" src="image/icons/saved-searches.svg" aria-hidden="true" class="m-r-s" height="40"
-                        width="40">Access saved cars and searches</li>
-                <li><img alt="" src="image/icons/saved-cars.svg" aria-hidden="true" class="m-r-s" height="40"
-                        width="40">Compare your favorites</li>
-                <li><img alt="" src="image/icons/car-alerts.svg" aria-hidden="true" class="m-r-s" height="40"
-                        width="40">Set up new inventory alerts</li>
-                <li><img alt="" src="image/icons/account.svg" aria-hidden="true" class="m-r-s" height="40"
-                        width="40">Make car payments and manage finance account</li>
-            </ul>
-        </div>
-        <form action="">
-            <h1>Welcome to TopCars!</h1>
-            <div class="form-group">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <input class="form-control" type="text" name="username" placeholder="First Name" required />
-            </div>
-            <div class="form-group">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <input class="form-control" type="text" name="username" placeholder="Last Name" required />
-            </div>
-            <div class="form-group">
-                <i class="fas fa-envelope"></i>
-                <input class="form-control" type="text" name="email" placeholder="Email" required />
-            </div>
-            <div class="form-group">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input class="form-control" type="password" name="password" placeholder="Password"
-                    required />
-            </div>
-            <div class="form-group">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <input class="form-control" type="password" name="passwordRepeat"
-                    placeholder="Comfirm Password" required />
-            </div>
-            <div class="m-t-lg">
-                <input class="btn" type="Submit" value="REGISTER">
-                <input class="btn" type="reset" value="CANCEL">
-            </div>
-            <p>Already have an account?</p>
-            <a class="login-link" href=""> Sign-In to your account </a>
-        </form>
-    </div>
-    <!-- End register form -->
 
     <!-- Start Home -->
     <section class="home" id="home">
         <div class="images">
             <img src="./image/WallpaperDog-10801985.jpg" id="currentImg" class="curImg" alt="landing">
             <img src="./image/hyundai-ioniq-5-int-1001x565-(2).jpg" alt="landing">
-            <img src="./image/2800x2100_legs-car-retro-road-marking.jpg" alt="landing">
+            <img src="./image/lycg-xl.jpg" alt="landing">
             <img src="./image/Ford-Ranger-Raptor-Special-Edition-6.jpg" alt="landing">
         </div>
         
@@ -424,7 +351,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -438,7 +365,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -452,7 +379,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -466,7 +393,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -484,7 +411,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -498,7 +425,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -512,7 +439,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
 
                 <div class="swiper-slide box">
@@ -526,7 +453,7 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <div class="price">$55,000/-</div>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Reservation </a>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -773,9 +700,9 @@
     
     <!-- start footer ends -->
 
-    <!-- scroll top button  -->
+<!-- scroll top button  -->
 
-<a href="#home" class="top"><img src="image/scroll-top-img.png" alt=""></a>
+<span class="top"><img src="image/scroll-top-img.png" alt=""></span>
 
 <div class="chat" id="chat">
     <div id="chat-overlay"></div>
@@ -785,23 +712,23 @@
 <div class="chat-box">
     <div class="chat-box-header">
         Chat With TopCars
-        <span class="chat-box-toggle"><i class="fas fa-times"></i></span> 
+        <span class="chat-box-toggle"><i class="fas fa-times"></i></span>
     </div>
     <div class="chat-box-body">
-        <div class="chat-box-overlay">   
+        <div class="chat-box-overlay">
         </div>
         <div class="chat-logs"></div> <!--chat-log -->
     </div>
-    <div class="chat-input">      
+    <div class="chat-input">
         <form>
             <input type="text" id="chat-input" placeholder="Send a message..."/>
             <button type="submit" class="chat-submit" id="chat-submit"><i class="fas fa-paper-plane"></i></button>
-        </form>      
+        </form>
     </div>
 </div>
 
 <div class="feedback">
-    <a href="#"><img src="image/Qualtrics+feedback+button" alt="feedback"></a>
+    <a href="#contact"><img src="image/Qualtrics+feedback+button" alt="feedback"></a>
 </div>
     
     <!-- jquery cdn link  -->

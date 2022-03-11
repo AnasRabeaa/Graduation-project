@@ -27,21 +27,6 @@ menu.onclick = () =>{
     navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
-    document.querySelector('.login-form-container').classList.toggle('active');
-}
-
-document.querySelector('#close-login-form').onclick = () =>{
-    document.querySelector('.login-form-container').classList.remove('active');
-}
-
-document.querySelector('#register-btn').onclick = () =>{
-    document.querySelector('.register-form-container').classList.toggle('active');
-}
-
-document.querySelector('#close-register-form').onclick = () =>{
-    document.querySelector('.register-form-container').classList.remove('active');
-}
 
 document.querySelector('#search').onclick = () =>{
     document.querySelector('.search-container').classList.toggle('active');
@@ -156,36 +141,25 @@ var swiper = new Swiper(".review-slider", {
 });
 
 
+// scroll top
+let span = document.querySelector(".top");
 
-$(document).ready(function(){
+window.onscroll = function () {
+    console.log(window.scrollY);
+    if (window.scrollY >= 100) {
+        span.style.display = "block";
+    } else {
+        span.style.display = "none";
+    }
+   //  this.scrollY >= 1000 ? span.classList.add("show") : span.classList.remove("show");
+};
 
-    $(window).on('scroll load',function(){
-    
-        if($(window).scrollTop() > 0){
-        $('.top').show();
-        }else{
-        $('.top').hide();
-        }
+span.onclick = function () {
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth",
     });
-
-    // smooth scrolling 
-
-    $('a[href*="#"]').on('click',function(e){
-
-        e.preventDefault();
-
-        $('html, body').animate({
-
-        scrollTop : $($(this).attr('href')).offset().top,
-
-        },
-        500, 
-        'linear'
-        );
-
-    });
-
-});
+};
 
 
 
@@ -198,7 +172,7 @@ $(function() {
         generate_message(name, 'self');
     })
     
-    $("#chat").click(function() {    
+    $("#chat").click(function() {
         $("#chat").toggle('scale');
         $(".chat-box").toggle('scale');
     })
