@@ -279,7 +279,7 @@ html {
   color: #545b63;
   line-height: 24px;
   letter-spacing: normal;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 8px;
   padding-bottom: 0;
   flex-wrap: wrap;
@@ -302,41 +302,104 @@ html {
   letter-spacing: normal;
 }
 
-/* Start pagination */
-.pagination {
+.cars-list .btns button {
+  /* display: flex; */
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cars-list .btns .first {
+  background-color: #f6f6f6;
+  border-color: #f6f6f6;
+  text-align: center;
+  background-color: transparent;
+  /* border: 1px solid transparent; */
+  padding: 0.786rem 1.5rem;
+  width: 45%;
+}
+
+.cars-list .btns .secound {
+  border-color: var(--black) !important;
+  background-color: var(--black) !important;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+  /* border: 1px solid transparent; */
+  padding: 0.786rem 1.5rem;
+  width: 55%;
+  border-radius: 0;
+}
+
+/* start pagination */
+.content__paging {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 5%;
   padding-left: 15%;
 }
-@media (max-width: 1200px) {
-  .pagination {
-    padding-left: 0%;
-  }
+
+/*  .content__paging .page{
+    flex-grow: 1;
+} */
+
+.content__paging .page-config {
+  margin-right: 30px;
 }
 
-/* Pagination links */
-.pagination a {
+.content__paging .page-config select {
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.content__paging .total-item,
+.total-page {
+  margin-right: 30px;
+}
+
+.content__paging .number-page {
+  display: flex;
+}
+
+.content__paging ul {
+  display: flex;
+  justify-content: center;
+}
+
+.content__paging li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.content__paging ul li a {
   color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  font-weight: 800;
-  font-size: large;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-/* Style the active/current link */
-.pagination a.active {
-  background-color: var(--yellow);
-  color: white;
+.btn-active {
+  color: var(--yellow);
+  border: solid 1px #c6c9cc !important;
 }
 
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
+.content__paging .active {
+  background: var(--yellow);
+  border: 1px solid --yellow
 }
-/* End pagination */
+
+.content__paging .active a {
+  color: var(--white);
+}
+
+/* end pagination */
 
 .footer {
   padding: 20px 9%;
