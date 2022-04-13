@@ -45,7 +45,7 @@
         <!-- End Box -->
         <div class="box">
             <h3 class="title">search Car :</h3>
-            <input type="text" placeholder="search Car.." id="search-box">
+            <input type="text" placeholder="search Car.." id="search-box" onkeyup="search()">
         </div>
         <div class="box">
             <h3 class="title">Sort by type :</h3>
@@ -75,8 +75,8 @@
     
     <!-- Start car section -->
     <div class="cars">
-        <div class="car-container">
-            <div class="cars-list" data-cat="" data-search="">
+        <div class="car-container" id="product-list">
+            <!-- <div class="cars-list" data-cat="" data-search="">
                 <a href="jeep.html">
                     <div class="images-car">
                         <img src="image/jeep cars/car1/1.png" alt="jeep">
@@ -475,21 +475,30 @@
                         <span class="transfer">⁠Available at your store TopCars 6 Octoper, Egypt</span>
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- End car section -->
 
     <!-- Start pagination sestion -->
-    <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a class="active" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
+    <div class="content__paging">
+        <div class="page">
+            <ul>
+                <li class="btn-prev btn-active fas fa-angle-left"></li>
+                <div class="number-page" id="number-page">
+                    <li class="active">
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a>2</a>
+                    </li>
+                    <li>
+                        <a>3</a>
+                    </li>
+                </div>
+                <li class="btn-next fas fa-angle-right"></li>
+            </ul>
+        </div>
     </div>
     <!-- End pagination sestion -->
 
